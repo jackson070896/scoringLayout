@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Scoring Layout</title>
 </head>
@@ -17,6 +17,10 @@
                 <span class="logo-txt">Waxon</span>
             </a>
             <nav class="menu">
+                <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                <label for="checkbox" class="mobile-menu__btn">
+                    <div class="mobile-menu__icon"></div>
+                </label>
                 <ul class="menu-ul">
                     <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
                     <li class="menu-list"><a class="menu-link" href="#">About Us</a></li>
@@ -35,6 +39,7 @@
                 </form>
             </div>
         </div>
+
         <div class="slider-text">
             <span class="slider-trending">Unique and Modern Design</span>
             <h2 class="slider-h2">Portfolio PSD Template</h2>
@@ -42,26 +47,28 @@
                 quod mazim placerat facer possim assum.</p>
             <a href="#" class="slider-button">Get Started</a>
         </div>
-        <a id="left" href="#" class="left">
-            <svg class="link-slider" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
-                <path d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z"/>
-            </svg>
-        </a>
-        <a id="right" href="#" class="right">
-            <svg class="link-slider" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
-                <path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z"/>
-            </svg>
-        </a>
-        <div class="pagination">
-            <a href="#" class="circle"></a>
-            <a href="#" class="circle circle-active"></a>
-            <a href="#" class="circle"></a>
-            <a href="#" class="circle"></a>
-            <a href="#" class="circle"></a>
+        <div class="absolute">
+            <a id="left" href="#" class="left">
+                <svg class="link-slider" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
+                    <path d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z"/>
+                </svg>
+            </a>
+            <a id="right" href="#" class="right">
+                <svg class="link-slider" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
+                    <path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z"/>
+                </svg>
+            </a>
+            <div class="pagination">
+                <a href="#" class="circle"></a>
+                <a href="#" class="circle circle-active"></a>
+                <a href="#" class="circle"></a>
+                <a href="#" class="circle"></a>
+                <a href="#" class="circle"></a>
+            </div>
         </div>
     </section>
     <section class="services-bg-real">
-        <div class="services padding-site">
+        <div class="services">
             <div class="features">
                 <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" width="49" height="49"
                      viewBox="0 0 49 49">
@@ -115,7 +122,7 @@
             <a href="#" class="text-boxes-button">Purchase Now</a>
         </article>
     </section>
-    <section class="projects padding-site">
+    <section class="projects">
         <h2 class="project-title">Our Latest Projects.</h2>
         <p class="project-content">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
             Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -189,7 +196,7 @@
         <a href="#" class="projects-button">Load more</a>
     </section>
     <section class="video">
-        <video class="video-item" src="video/flower.webm" width="1920" height="705"
+        <video class="video-item" src="video/flower.webm"
                poster="img/photo-video.png"></video>
         <div class="video-txt-wrp">
             <a class="video-txt-btn"></a>
@@ -202,12 +209,7 @@
     <section class="excellent">
         <div class="excellent-image"><img class="excellent-image-item" width="423" height="616"
                                           src="img/iphone_in_hand.png" alt="iphone-in-hand"></div>
-        <div class="excellent-item">
-            <h2 class="excellent-item-title">Excellent for Mobile Devices.</h2>
-            <p class="excellent-item-content">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea
-                commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
-                claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        <div class="details-summary">
             <details>
                 <summary>
                     Nam liber tempor cum soluta nobis eleifend option;
@@ -233,6 +235,15 @@
                 <p>Lorem ipsum dolor sit amet. </p>
             </details>
         </div>
+        <div class="excellent-item">
+            <h2 class="excellent-item-title">Excellent for Mobile Devices.</h2>
+            <p class="excellent-item-content">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea
+                commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
+                claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        </div>
+
+
     </section>
     <section class="counters">
         <div class="counters-item">
@@ -291,8 +302,8 @@
                     <a class="recent-posts-item-link" href="#">Read More</a>
                 </div>
                 <div class="date">
-                    <div class="day">30</div>
-                    <div class="month">Sep.</div>
+                    <span class="day">30</span>
+                    <span class="month">Sep.</span>
                 </div>
             </article>
             <article class="recent-posts-item">
@@ -338,19 +349,97 @@
         </div>
     </section>
     <section class="partners">
-        <a href="" class="partner-link">
+        <a href="#" class="partner-link">
             <img src="img/barber.png" width="210" height="127" alt="THE BARBER" class="partner-logo">
         </a>
-        <a href="" class="partner-link">
+        <a href="#" class="partner-link">
             <img src="img/delicious.png" width="210" height="210" alt="Delicious" class="partner-logo">
         </a>
-        <a href="" class="partner-link">
+        <a href="#" class="partner-link">
             <img src="img/designer.png" width="210" height="130" alt="DESIGNER" class="partner-logo">
         </a>
-        <a href="" class="partner-link">
+        <a href="#" class="partner-link">
             <img src="img/royal.png" width="210" height="164" alt="Royal ROADSTER" class="partner-logo">
         </a>
     </section>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-logo">
+                <a href="#" class="footer-link-logo">
+                    <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" width="64" height="56"
+                         viewBox="0 0 64 56">
+                        <path d="M31.854 19.905L26.6 10.713h10.508zm-1.314.766H20.032l5.254-9.191zm2.628 0l5.254-9.191 5.254 9.191zm10.508 1.53l-5.254 9.189-5.254-9.188zm-13.136 0l-5.254 9.189-5.254-9.188zm-11.822.766l5.253 9.187H13.465zm21.02 9.187l5.252-9.187 5.253 9.187zm-2.63-22.97H26.6l5.254-9.19zm2.63 24.502h10.505l-5.253 9.188zm-26.273 0H23.97l-5.253 9.188zm-1.314.765l5.253 9.19H6.897zm34.152 9.19l5.254-9.19 5.254 9.19zm10.508 1.53l-5.254 9.188-5.254-9.187zm-13.135 0l-5.254 9.188-5.254-9.187zm-36.779 0h10.507L12.15 54.36zm-1.315.768l5.254 9.189H.33zm26.272 0l5.254 9.189H26.6zm13.136 0l5.253 9.189H39.738zm18.387 9.189H52.873l5.252-9.189z"/>
+                    </svg>
+                    <span class="footer-logo-txt">Waxon</span>
+                </a>
+            </div>
+            <p class="footer-row-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit
+                lobortis claritatem.
+            </p>
+            <a class="footer-item-link" href="#">Read More</a>
+        </div>
+        <div class="footer-row">
+            <h2 class="footer-row-recent-posts">Recent Posts</h2>
+            <a href="#" class="footer-row-post">
+                <span class="footer-row-post-date">September 08, 2015</span>
+                <p class="footer-row-post-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+            </a>
+            <a href="#" class="footer-row-post">
+                <span class="footer-row-post-date">September 08, 2015</span>
+                <p class="footer-row-post-text">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+            </a>
+            <a href="#" class="footer-row-post">
+                <span class="footer-row-post-date">September 08, 2015</span>
+                <p class="footer-row-post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem per
+                    seacula quarta decima
+                </p>
+            </a>
+        </div>
+        <div class="footer-row">
+            <h2 class="footer-row-twitter">Our Twitter</h2>
+            <div class="twitter">
+                <p class="footer-row-twitter-text"><a href="#" class="footer-row-post-link">@waxom</a> Cum soluta nobis
+                    eleifend option congue nihil imperdiet doming</p>
+                <span class="footer-row-twitter-date">3 mins ago</span>
+            </div>
+            <div class="twitter">
+                <p class="footer-row-twitter-text">Mirum est <a href="#" class="footer-row-post-link">#envato</a> notare
+                    quam
+                    littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                <span class="footer-row-twitter-date">5 hours ago</span>
+            </div>
+            <div class="twitter">
+                <p class="footer-row-twitter-text">Soluta nobis option <a href="#"
+                                                                          class="footer-row-post-link footer-row-post-link-visited">bit.ly/1Hniso7</a>
+                </p>
+                <span class="footer-row-twitter-date">20 days ago</span>
+            </div>
+        </div>
+        <div class="footer-row">
+            <h2 class="footer-row-recent-posts">Dribbble Widget</h2>
+            <div class="widget-row">
+                <img class="widget" src="img/widget_01.png" height="98" width="130" alt="widget-01">
+                <img class="widget" src="img/widget_02.png" height="98" width="130" alt="widget-02">
+            </div>
+            <div class="widget-row">
+                <img class="widget" src="img/widget_03.png" height="98" width="130" alt="widget-03">
+                <img class="widget" src="img/widget_04.png" height="98" width="130" alt="widget-04">
+            </div>
+        </div>
+    </section>
+    <footer class="footer-site padding-site">
+        <div class="footer-site-row">
+            <p class="footer-site-cop">Copyright © 2015 <span class="footer-site-wax">Waxom</span></p>
+            <a href="#" class="footer-site-link">Privacy Policy</a>
+            <a href="#" class="footer-site-link">FAQ</a>
+            <a href="#" class="footer-site-link">Support</a>
+        </div>
+        <div class="footer-site-row"><p class="footer-site-design">Designed by <span
+                class="footer-site-wax">ThemeFire</span></p>
+            <p class="footer-site-cop">Only on <span class="footer-site-wax">Envato Market</span></p></div>
+    </footer>
 </div>
 </body>
 </html>
